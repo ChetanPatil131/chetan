@@ -1,0 +1,163 @@
+*{
+    margin: 0%; padding: 0%; 
+}
+
+   header{margin: 0;padding: 0;
+    width: 100%; height: 100vh;
+    background: radial-gradient(rgb(255, 192, 231,white));
+  }  
+  nav{margin: 0; padding: 0;
+    width: 100%; height: 10%;
+    background: rgba(36, 35, 35, 0.2);
+    color: white; display: flex; justify-content: space-between; 
+    align-items: center; 
+    top: 0;
+}
+nav a:hover{ color: rgba(235, 88, 3, 0.87); text-shadow: 3px 3px 6px black; transform: scale(1.1);}
+ .logo h1{ color:rgb(0, 217, 255); text-shadow: 3px 3px 6px black;
+    margin-left:40px; 
+      width: 35%;  text-align: center; font-size: 250%;
+      transform: scale(1.1);
+    }
+
+.menu {
+    width: 65%;  
+    display: flex; justify-content: space-around; 
+    }
+    .menu a{ top: 0%;
+        text-decoration: none; color: white; font-weight: bold; 
+        font-size: 20px;  text-shadow: 12px 12px 24px black;  
+    }
+    main{
+         padding-top: 25%; 
+        width: 100%; height: 30vh;
+        display: flex; justify-content: center; align-items: center; text-align: center; color: white;
+    }
+
+    section h3{
+        font-size: 35px; font-weight: 300; letter-spacing: 2px;
+        text-shadow: 1px 1px 2px black;
+    }
+       body{
+        background:radial-gradient(rgb(158, 151, 151),rgb(114, 73, 116));;  
+     }   
+    section h1{
+        font-size: 55px; font-weight: 700;
+        text-shadow: 4px 2px 10px black;
+        text-transform: uppercase;   
+    }
+    section p{
+        font-size: 25px; color: white;
+        word-spacing: 2px; margin-bottom: 25px;
+        text-shadow: 2px 2px 2px black;
+    }
+    .change_content:after{
+        content: '';
+        animation: changetext 10s infinite linear;
+        color: red;
+    }
+    @keyframes changetext{
+        0%{content: "HOME";}
+        20%{content: "LASTEST TRAVEL";}
+        35%{content: "DESTINATION";}
+        60%{content: "WEEKEND GETAWAYS";}
+        80%{content: "EXPLORE";}
+    }
+ .glass{
+    top: 0;padding: 0;margin: 0;
+    width: 27%; 
+    float: left;
+    margin-left: 23px;
+    margin-right: 10px;
+    padding: 30px;
+    padding-right: 10px;
+ }
+ .glass img{
+    height: 195px; padding-bottom: 0%;} 
+    img:hover{transform: scale(1.1);}
+.glass h2{
+    text-align: center; color: black; padding: 4px;} h2:hover{ transform: scale(1.1);color: white;}
+    h1:hover{transform: scale(1.1); color: white;}
+.title{
+    text-align: center;
+    /* margin-top: 10%; */
+     position:relative  ;
+    line-height: 40px;    
+}
+/* .title nav{margin-top: -10px;}
+.title h1{font-size: 30px; top: 0%; } 
+.title a{top: 0;} */
+.title::after{
+    content: '';
+    background: orangered;
+    width: 220px;
+    height: 7px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container:hover{
+    transform: translateX(-5px);
+}
+marquee{
+    bottom: 10px;
+    width: 50%;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('33686948-collage-with-famous-landmarks-of-mumbai-city-india.webp');
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slider 10s infinite linear;
+    }
+    @keyframes slider{
+        0%{background-image: url('33686948-collage-with-famous-landmarks-of-mumbai-city-india.webp');}
+        4%{background-image: url('43914221_363966157680449_595145553531016098_n.jpg');}
+        8%{background-image: url('390032-newproject-2022-05-23t192744880.jpg');}
+        12%{background-image: url('best-of-rajasthan-tour.jpg');}
+        16%{background-image: url('tamilnadu-banner.webp');}
+        20%{background-image: url('vembanad-kumarakom.jpg');}
+        24%{background-image: url('istockphoto-539018660-612x612.jpg');}
+        28%{background-image: url('1896134.jpg');}
+        32%{background-image: url('india-top-attractions-taj-mahal.jpg');}
+        36%{background-image: url('istockphoto-482557081-170667a.jpg');}
+        40%{background-image: url('istockphoto-1192261427-170667a.jpg');}
+        44%{background-image: url('famous-hyderabad-landmark-charminar-india-world-built-quli-qutb-shah-th-century-128124667.jpg');}
+        48%{background-image: url('istockphoto-1223612773-612x612.jpg');}
+        52%{background-image: url('istockphoto-1206699415-170667a.jpg');}
+        56%{background-image: url('shutterstock-115227475.webp');}
+        60%{background-image: url('shuttersto-6611e41e36e513c.avif');}
+        64%{background-image: url('Ladakh-lead.webp');}
+        72%{background-image: url('istockphoto-1287050440-170667a.jpg');}
+        76%{background-image: url('Popular-Temples-in-India.jpg');}
+        80%{background-image: url('Best-Waterfalls-In-India.jpg');}
+        84%{background-image: url('photo-1512343879784-a960bf40e7f2.jpg');}
+        88%{background-image: url('MANALI.jpg');}
+        92%{background-image: url('maxresdefault.jpg');}
+    }
+       
+.footer p{
+    
+    color: white; 
+}   
+
+.footer{padding-bottom: 50px; padding-top: 50px; padding: 100px 10vh; 
+    grid-area: footer;
+    text-align: center;
+    font-size: 35px;
+    padding: 50px;
+    background: rgb(17, 17, 31); background: red;
+    margin-left: 20px;
+    margin-bottom: 20px;margin-top: 20px;
+    margin-right: 20px;
+    
+}  
+
+
+
+
+
